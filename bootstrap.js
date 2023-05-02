@@ -52,11 +52,11 @@
 /******/ 	function promiseResolve() { return Promise.resolve(); }
 /******/
 /******/ 	var wasmImportObjects = {
-/******/ 		"./pkg/wasm_game_of_life_bg.wasm": function() {
+/******/ 		"../pkg/wasm_game_of_life_bg.wasm": function() {
 /******/ 			return {
 /******/ 				"./wasm_game_of_life_bg.js": {
 /******/ 					"__wbindgen_throw": function(p0i32,p1i32) {
-/******/ 						return installedModules["./pkg/wasm_game_of_life_bg.js"].exports["__wbindgen_throw"](p0i32,p1i32);
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbindgen_throw"](p0i32,p1i32);
 /******/ 					}
 /******/ 				}
 /******/ 			};
@@ -149,7 +149,7 @@
 /******/
 /******/ 		// Fetch + compile chunk loading for webassembly
 /******/
-/******/ 		var wasmModules = {"0":["./pkg/wasm_game_of_life_bg.wasm"]}[chunkId] || [];
+/******/ 		var wasmModules = {"0":["../pkg/wasm_game_of_life_bg.wasm"]}[chunkId] || [];
 /******/
 /******/ 		wasmModules.forEach(function(wasmModuleId) {
 /******/ 			var installedWasmModuleData = installedWasmModules[wasmModuleId];
@@ -159,7 +159,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"./pkg/wasm_game_of_life_bg.wasm":"21f8a392481a200d0703"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"../pkg/wasm_game_of_life_bg.wasm":"7a196cf7ae685bd6d476"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
