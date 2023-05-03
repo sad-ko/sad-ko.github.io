@@ -55,6 +55,24 @@
 /******/ 		"../pkg/wasm_game_of_life_bg.wasm": function() {
 /******/ 			return {
 /******/ 				"./wasm_game_of_life_bg.js": {
+/******/ 					"__wbindgen_object_drop_ref": function(p0i32) {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbindgen_object_drop_ref"](p0i32);
+/******/ 					},
+/******/ 					"__wbindgen_string_new": function(p0i32,p1i32) {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbindgen_string_new"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_new_abda76e883ba8a5f": function() {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbg_new_abda76e883ba8a5f"]();
+/******/ 					},
+/******/ 					"__wbg_stack_658279fe44541cf6": function(p0i32,p1i32) {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbg_stack_658279fe44541cf6"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_error_f851667af71bcfc6": function(p0i32,p1i32) {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbg_error_f851667af71bcfc6"](p0i32,p1i32);
+/******/ 					},
+/******/ 					"__wbg_log_7bb108d119bafbc1": function(p0i32) {
+/******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbg_log_7bb108d119bafbc1"](p0i32);
+/******/ 					},
 /******/ 					"__wbg_random_afb3265527cf67c8": function() {
 /******/ 						return installedModules["../pkg/wasm_game_of_life_bg.js"].exports["__wbg_random_afb3265527cf67c8"]();
 /******/ 					},
@@ -162,7 +180,7 @@
 /******/ 				promises.push(installedWasmModuleData);
 /******/ 			else {
 /******/ 				var importObject = wasmImportObjects[wasmModuleId]();
-/******/ 				var req = fetch(__webpack_require__.p + "" + {"../pkg/wasm_game_of_life_bg.wasm":"2b744e5779c3ffaa3f94"}[wasmModuleId] + ".module.wasm");
+/******/ 				var req = fetch(__webpack_require__.p + "" + {"../pkg/wasm_game_of_life_bg.wasm":"b3697ecfbf14a6624f93"}[wasmModuleId] + ".module.wasm");
 /******/ 				var promise;
 /******/ 				if(importObject instanceof Promise && typeof WebAssembly.compileStreaming === 'function') {
 /******/ 					promise = Promise.all([WebAssembly.compileStreaming(req), importObject]).then(function(items) {
